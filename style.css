@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(220, 220, 222);
+  color: #000;
+  padding: 10px;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+.text, .tige{
+  display: none;
+}
+.chevron {
+  position: relative;
+  transition: left 0.3s ease;
+}
+.container:hover {
+  width: 160px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #47fdd9;
+  & .text{
+    display: block;
+  }
+  & .tige{
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-right: -13px;
+    background-color: #000;
+  }
+}
